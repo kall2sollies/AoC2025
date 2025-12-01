@@ -1,5 +1,3 @@
-from Rotation import Rotation
-
 class Dial:
 
     currentValue: int
@@ -9,10 +7,6 @@ class Dial:
 
     def rotate(self, rotationValue: int):
         self.currentValue += rotationValue
-        self.currentValue %= 100
-
-    def rotate(self, rotation: Rotation):
-        self.currentValue += rotation.value
         self.currentValue %= 100
 
     def dump(self):

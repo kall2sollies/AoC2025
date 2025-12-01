@@ -10,7 +10,7 @@ def main():
     zeroCount: int = 0
 
     for rotation in rotations:
-        dial.rotate(rotation)
+        dial.rotate(rotation.value)
         if dial.currentValue == 0:
             zeroCount += 1
 
